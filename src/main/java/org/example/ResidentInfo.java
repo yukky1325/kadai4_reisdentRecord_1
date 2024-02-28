@@ -9,6 +9,16 @@ public class ResidentInfo {
     private LocalDate birthday;
     private int periodOfResidence;
 
+    @Override
+    public String toString() {
+        return "ResidentInfo{" +
+                "roomNo=" + roomNo +
+                ", name='" + name + '\'' +
+                ", birthday=" + birthday +
+                ", periodOfResidence=" + periodOfResidence +
+                '}';
+    }
+
     public ResidentInfo(int roomNo, String name, LocalDate birthday, int periodOfResidence) {
         this.roomNo = roomNo;
         this.name = name;
