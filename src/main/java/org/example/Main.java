@@ -15,7 +15,7 @@ public class Main {
                 new ResidentInfo(103, "tada", LocalDate.of(1991, 03, 14), 4),
                 new ResidentInfo(104, "yamada", LocalDate.of(1992, 03, 14), 10));
 
-        List<ResidentInfo> results = residents.stream().filter(residentInfo -> residentInfo.getName().contains("a")).toList();
+        List<ResidentInfo> results = residents.stream().filter(residentInfo -> residentInfo.getName().startsWith("t")).toList();
         System.out.println(results);
 
     }
